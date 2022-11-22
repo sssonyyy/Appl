@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Spring Boot Mustache</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table, td, th {
+            border: 1px solid #ffffff;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<h2>Courses</h2>
+
+<table>
+    <tr>
+        <th> Id</th>
+        <th>Name</th>
+        <th>DateBeg</th>
+        <th> DateEnd</th>
+        <th> ActivityType</th>
+    </tr>
+
+    {{#course}}
+        <tr>
+            <td>{{Id}}</td>
+            <td>{{Name}}</td>
+            <td>{{CourseDateBeg}}</td>
+            <td>{{CourseDateEnd}}</td>
+            <td>{{AvtivityType}}</td>
+        </tr>
+
+    {{/course}}
+</table>
+
+
+</body>
+</html>
